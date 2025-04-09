@@ -1,8 +1,5 @@
-tensorflow-gpu==2.10.0
+tensorflow
 numpy
 opencv-python
-pandas
 matplotlib
-scikit-image
-tf-slim
-tf-models-official
+scikit-learn

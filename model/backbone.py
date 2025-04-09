@@ -1,10 +1,8 @@
-# model/backbone.py
-
 import tensorflow as tf
 
-def get_backbone(input_shape=(240,426,3)):
+def get_backbone(input_shape=(384,640,3)):
     """
-    A lighter ResNet50‑C5 backbone for CPU training on 240×426 inputs.
+    ResNet50 up to Conv5_x (C5), pretrained on ImageNet.
     """
     base = tf.keras.applications.ResNet50(
         include_top=False,
